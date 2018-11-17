@@ -420,11 +420,11 @@ public class Operations{
                         access.insertBulkErrorMessages(subObj, missLetter, "Missing a Letter");
                         missLetter = methodOne(missLetter, new ArrayList<String>());
                     }
-                    if(extraneous.size()>0){
+                    if(noVaiable.size()>0){
                         access.insertBulkErrorMessages(subObj, extraneous, "Extraneous Input");
                         noVaiable = methodOne(noVaiable, new ArrayList<String>());
                     }
-                    if(noVaiable.size()>0){
+                    if(extraneous.size()>0){
                         access.insertBulkErrorMessages(subObj, noVaiable, "No Viable Alternative");
                         extraneous = methodOne(extraneous, new ArrayList<String>());
                     }
